@@ -1,31 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const cards = [...document.querySelectorAll('div[id^=card-]')];
-  const pkmns = [...document.querySelectorAll('div[id^=pkm-]')];
+  const buttons = [...document.querySelectorAll('div[id^=mn-]')];
 
-  cards.forEach((card, i) => {
-    card.addEventListener('click', () => {
-      const pkmnId = card.getAttribute('pkm');
-      const pkmn = pkmns.find((c) => c.id === pkmnId);
+  buttons.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      if (![...btn.classList].includes('mn-active')) {
+        btn.classList.add('mn-active', 'af-active');
+        buttons
+          .filter((_, j) => j !== i)
+          .forEach((b) => b.classList.remove('mn-active', 'af-active'));
 
-      if (pkmn === undefined) return;
-      if ([...card.classList].includes('active')) return;
+        const containerId = btn.getAttribute('cnt');
 
-      // Deactivates previous card and pokemon
-      const previousCard = cards.find(
-        (c) => c.id !== card.id && [...c.classList].includes('active')
-      );
+        const containers = document.querySelectorAll(`div[id^=cnt-]`);
 
-      previousCard.classList.remove('active');
-
-      const previousPkmn = pkmns.find(
-        (p) => p.id !== pkmn.id && [...p.classList].includes('active')
-      );
-
-      previousPkmn.classList.remove('active');
-
-      // Activates clicked card and pokemon
-      card.classList.add('active');
-      pkmn.classList.add('active');
+        [...containers].forEach((container) => {
+          if (containerId === container.id) {
+            container.classList.remove('cnt-hidden');
+          } else {
+            container.classList.add('cnt-hidden');
+          }
+        });
+      }
     });
   });
 });
