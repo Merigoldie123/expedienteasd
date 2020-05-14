@@ -78,7 +78,7 @@ body {
 
 .exp-body > .left-side > .menu > .item:hover:after {
   right: 120px;
-  background: rgba(217, 93, 57, 1);
+  background: rgba(158, 158, 158);
 }
 
 .exp-body > .left-side > .menu > .item:hover > span {
@@ -131,7 +131,7 @@ body {
 
 .exp-body > .left-side > .content > .cnt > .title {
   font-family: 'Jost', sans-serif;
-  color: rgba(217, 93, 57, 1);
+  color: rgba(158, 158, 158);
   font-weight: 900;
   font-size: 25px;
   letter-spacing: -2px;
@@ -153,12 +153,12 @@ body {
 /* HELPERS */
 
 .mn-active > span {
-  color: rgba(217, 93, 57, 1) !important;
+  color: rgba(158, 158, 158) !important;
 }
 
 .af-active::after {
   right: 120px !important;
-  background: rgba(217, 93, 57, 1) !important;
+  background: rgba(158, 158, 158) !important;
 }
 
 .cnt-hidden {
