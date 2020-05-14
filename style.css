@@ -28,7 +28,7 @@ body {
 }
 
 .exp-body strong {
-  color: rgba(217, 93, 57, 1);
+  color: rgba(158, 158, 158);
 }
 
 /* LEFT SIDE */
@@ -82,7 +82,7 @@ body {
 }
 
 .exp-body > .left-side > .menu > .item:hover > span {
-  color: rgba(217, 93, 57, 1);
+  color: rgba(158, 158, 158);
 }
 
 .exp-body > .left-side > .menu > .item > span {
