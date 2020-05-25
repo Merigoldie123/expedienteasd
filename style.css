@@ -28,7 +28,7 @@ body {
 }
 
 .exp-body strong {
-  color: rgba(158, 158, 158);
+  color: #f5af7c;
 }
 
 /* LEFT SIDE */
@@ -78,11 +78,11 @@ body {
 
 .exp-body > .left-side > .menu > .item:hover:after {
   right: 120px;
-  background: rgba(158, 158, 158);
+  background: #f5af7c;
 }
 
 .exp-body > .left-side > .menu > .item:hover > span {
-  color: rgba(158, 158, 158);
+  color: #f5af7c;
 }
 
 .exp-body > .left-side > .menu > .item > span {
@@ -131,7 +131,7 @@ body {
 
 .exp-body > .left-side > .content > .cnt > .title {
   font-family: 'Jost', sans-serif;
-  color: rgba(158, 158, 158);
+  color: #f5af7c;
   font-weight: 900;
   font-size: 25px;
   letter-spacing: -2px;
@@ -153,12 +153,12 @@ body {
 /* HELPERS */
 
 .mn-active > span {
-  color: rgba(158, 158, 158) !important;
+  color: #f5af7c !important;
 }
 
 .af-active::after {
   right: 120px !important;
-  background: rgba(158, 158, 158) !important;
+  background: #f5af7c !important;
 }
 
 .cnt-hidden {
